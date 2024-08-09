@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: aliceblue;
+    background-color: #333;
+    font-family: 'inter',sans-serif;
+    font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "slnt" 0;
+}
+
+
+
+:root{
+    --bg-color:radial-gradient(circle at 50% 0%,rgba(50,50,50,1) 0%,rgba(12,12,12,1) 100% );
+    --light:#ffe6e6;
+    --dark:#000;
+    --BG-color:#333;
+    --header-ff:'poppins',
+}
+
+
+header{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    background-image: url('img/pngtree-store-full-of-in-a-dark-room-picture-image_2654942.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    font-family: "Manrope";
+}
+
+.navbar i{
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    margin-left: 50px;
+    width: 25%;
+}
+
+
+#shop:hover{
+    cursor: pointer;
+   
+}
+
+.sign-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    margin-right: 50px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 140px;
+    height: 35px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-align: center;
+    transition: transform 0.7s ease-in;
+}
+
+.sign-button:hover{
+    cursor: pointer;
+}
+.sign-button a{
+    color:white;
+    text-decoration: none;
+    margin-left:10px;
+    width:10%;
+    
+}
+
+.sign-button i{
+    position: relative;
+    background-color: rgb(80, 35, 35);
+    width:100%;
+    height: 100%;
+    font-size: 1.5rem;
+    transition: visibility 1s ease-in-out 0.1s;
+    border-radius: 18px;
+}
+
+.sign-button:hover i{
+    transform: translateX(-73.5px);
+    transition: transform 0.7s ease-in 0s;
+}
+
+.sign-button:hover a{
+    transform: translateX(73.5px);
+    transition: transform 0.7s ease-in 0s;
+}
+
+.sign-button:not(:hover) i{
+    transition: transform 0.7s ease-in;
+}
+
+.sign-button:not(:hover) a{
+    transition: transform 0.7s ease-in;
+}
+
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 430px;
+}
+
+.nav-container li{
+    margin-right: 40px;
+    transition: color 0.5s ease-in, transform 0.5s ease-in;
+} 
+.nav-container li:hover{
+    transform: scale(1.2,1.2);
+    transition: transform 0.5s ease-in-out ;
+}
+
+.nav-container li:not(:hover){
+    transition: color 0.5s ease-in transform 0.5s ease-in;
+}
+
+.nav-container li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.nav-container .nav-link:hover{
+    color: blue;
+    transition: color 0.5s ease-in-out , border-bottom 0.5s ease-in 0.1s;
+}
+
+.nav-link:not(:hover){
+    transition: color  0.5s ease-in;
+}
+
+
+
+.intru{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    padding-bottom: 150px;
+    font-family:var(--header-ff);
+    font-size: 3rem;
+}
+
+.button{
+    display: inherit;
+    align-self: center;
+    margin-top: 100px;
+    width: 20%;
+    text-align: center;
+    padding: 30px;
+    padding-left: 60px;
+    color:white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    text-wrap: nowrap;
+    opacity: 0.7;
+}
+
+.button:hover{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.button:not(:hover){
+    transition: opacity 0.5s ease-in;
+}
+
+.button i{
+    width: 30px;
+    padding-left: 10px;
+}
+
+.button:hover i{
+   transition: transform 0.5s ease-in-out 0s;
+   transform:scale(1.4,1.4);
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-bottom: 200px;
+}
+
+
+
+.container{
+    overflow: clip;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100dvh;
+    background-image: var(--bg-color);
+}
+
+
+.clothing-container{
+    --gap:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap:calc((var(--gap) *2)) ;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:550px) {
+    .clothing-container{
+        flex-direction: column;
+    }
+}
+
+
+.content{
+    --active:0;
+    overflow: clip;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    width: calc((100%/3) - var(--gap));
+    height: 100%;
+    border-radius: 1rem;
+    transition: width 0.5s ease-in-out;
+}
+
+.content:hover{
+    --active:1;
+    width: calc(70% - var(--gap));
+}
+
+.content::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    opacity: 0.6;
+}
+
+.content img{
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+    width: 1rem;
+    transition: transform 0.5s cubic-bezier(0.23,0.93,0.77,1) 0.01s;
+}
+
+.profile-detail span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--light);
+    text-wrap: nowrap;
+}
+
+.profile-detail p{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--light);
+}
+
+.profile-quote{
+    width:22rem;
+    transform: translate(0,calc((1 - var(--active))*(100% + 2.5rem)));
+}
+
+.profile-quote p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--light);
+    transform: translate(0,calc((1 - var(--active))*(100% + 2.5rem)));
+    transition: transform 0.5s cubic-bezier(0.23,0.93,0.77,1) 0.1s;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition:grid-template-rows  0.5s cubic-bezier(0.23,0.93,0.77,1) 0.01s;
+    transition: grid-template-rows 0.5s cubic-bezier(0.23,0.93,0.77,1) 0.01s ,-ms-grid-rows 0.5s cubic-bezier(0.23,0.93,0.77,1) 0.01s; 
+}
+
+.profile-quote p {
+    min-height: 0;
+    transform: translateY(50%);
+    opacity:0;
+    transition: opacity 0.8s ease-in-out,transform 0.8s cubic-bezier(0.23,0.93,0.77,1) 0.01s;
+}
+
+.content:hover .wrapper{
+    grid-template-rows: 1fr;
+}
+
+.content:hover .profile-quote p{
+    transform: none;
+    opacity: 1;
+}
+
+
+
+/*
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.images-container{
+    display: inherit;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.img-container{
+    display: inherit;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.img-container:hover{
+    transition: transform 0.5s ease-in 0s;
+    transform: scale(1.4,1.4);
+}
+
+.images-caption{
+    position: absolute;
+    left: 0;
+    padding-left: 20px ;
+}
+
+.images-caption>h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 20px;
+}
+
+.images-caption>p{
+    line-height: 1.5em;
+}
+
+*/
+
+
+footer{
+    display: grid;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.f-links{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    margin-left: 500px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+
+}
+
+.f-links a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+
+.f-links a:hover{
+    text-decoration: underline;
+}
+
+footer .copy{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  width: 100%;
+  border-top: 1px solid aliceblue;
+  background-color: aquamarine;
+  padding: 10px;
+  color: black;
+}
+
+.social-media{
+    position: absolute;
+    left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+    height: auto;
+}
+
+.social-media p{
+    padding-bottom: 20px;
+    line-height: 2rem;
+    font-family: 'poppins';
+}
+
+.social-media a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding-left: 10px;
+}
+
+.social-media a:hover{
+    transition: color 0.5s ease-in-out 0.2s;
+    color: red;
+}
+
+
+
+
+
+
+
